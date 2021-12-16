@@ -8,7 +8,7 @@ class Servico(models.Model):
     valor = models.DecimalField('Valor', max_digits=10, decimal_places=2)
 
     def __str__(self):
-        return self.nome
+        return self.titulo
 
 
 class Usuario(models.Model):
@@ -23,4 +23,3 @@ class Usuario(models.Model):
 
     def __str__(self):
         return self.nomeCompleto
-
